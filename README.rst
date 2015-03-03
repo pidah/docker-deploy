@@ -40,14 +40,14 @@ Bootstrap-cfn uses `fabric <http://www.fabfile.org/>`_, so if your ``$CWD`` is t
     fab application:courtfinder aws:prod environment:dev config:/path/to/courtfinder-dev.yaml cfn_create
 
 
-If your ``CWD`` is anywhere else, you need to pass in a path to particular fabric file::
+If your ``$CWD`` is anywhere else, you need to pass in a path to particular fabric file::
 
     fab -f /path/to/bootstrap-cfn/fabfile.py application:courtfinder aws:prod environment:dev config:/path/to/courtfinder-dev.yaml cfn_create
 
 
 - **application:courtfinder** - is just a name to associate with Cloudformation stack
-- **aws:dev** - is a way to differentiate between AWS accounts (`~/.config.yaml`)
-- **environment:dev** - The `dev` section will be read from the projects YAML file (line 1 in the example below)
+- **aws:dev** - is a way to differentiate between AWS accounts (``~/.config.yaml``)
+- **environment:dev** - The ``dev`` section will be read from the projects YAML file (line 1 in the example below)
 - **config:/path/to/file.yaml** - The location to the project YAML file
 
 Example Configuration
@@ -55,7 +55,7 @@ Example Configuration
 AWS Account Configuration
 ++++++++++++++++++++++++++
 
-This tool can support many AWS accounts, for example, you may have separate `development` and `production` accounts, however you still want to deploy the same stack to each, this can be achieved by adding multiple accounts to the `~/.config.yaml` file. You'll notice from the **Example Usage** section above the `aws:dev` flag, this can be changed accordingly.
+This tool can support many AWS accounts, for example, you may have separate ``development`` and ``production`` accounts, however you still want to deploy the same stack to each, this can be achieved by adding multiple accounts to the ``~/.config.yaml`` file. You'll notice from the **Example Usage** section above the ``aws:dev`` flag, this can be changed accordingly.
 
 ::
 
@@ -70,7 +70,7 @@ This tool can support many AWS accounts, for example, you may have separate `dev
 
 Project specific YAML file
 +++++++++++++++++++++++++++
-The YAML file below highlights what is possible with all the bootstrap-cfn features available to date. The minimum requirement is that it must contain an `ec2` block, you **do not** have to use RDS, S3 or ELB's.
+The YAML file below highlights what is possible with all the bootstrap-cfn features available to date. The minimum requirement is that it must contain an ``ec2`` block, you **do not** have to use RDS, S3 or ELB's.
 
 ::
 
