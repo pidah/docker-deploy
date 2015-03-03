@@ -13,6 +13,7 @@ The objective of this repo is to enable MoJ teams to create project infrastructu
 
 Installation
 =============
+
 ::
     git clone git@github.com:ministryofjustice/bootstrap-cfn.git
     cd bootstrap-cfn
@@ -39,9 +40,8 @@ Bootstrap-cfn uses `fabric <http://www.fabfile.org/>`_, so if your ``$CWD`` is t
     fab application:courtfinder aws:prod environment:dev config:/path/to/courtfinder-dev.yaml cfn_create
 
 
-If your ``CWD`` is anywhere else, you need to pass in a path to particular fabric file
+If your ``CWD`` is anywhere else, you need to pass in a path to particular fabric file::
 
-::
     fab -f /path/to/bootstrap-cfn/fabfile.py application:courtfinder aws:prod environment:dev config:/path/to/courtfinder-dev.yaml cfn_create
 
 
