@@ -6,10 +6,10 @@ Ministry of Justice - Cloudformation
 
 The objective of this repo is to enable MoJ teams to create project infrastructure in a uniform manner. Currently this includes the following AWS services:
 
- - EC2 Servers
- - Elastic Load Balancers (ELB)
- - Relational Database Service (RDS)
- - S3 Storage for web static content
+- EC2 Servers
+- Elastic Load Balancers (ELB)
+- Relational Database Service (RDS)
+- S3 Storage for web static content
 
 Installation
 =============
