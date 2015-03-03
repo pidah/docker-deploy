@@ -45,7 +45,6 @@ If your ``CWD`` is anywhere else, you need to pass in a path to particular fabri
     fab -f /path/to/bootstrap-cfn/fabfile.py application:courtfinder aws:prod environment:dev config:/path/to/courtfinder-dev.yaml cfn_create
 
 
-With the following parameters:
 - **application:courtfinder** - is just a name to associate with Cloudformation stack
 - **aws:dev** - is a way to differentiate between AWS accounts (`~/.config.yaml`)
 - **environment:dev** - The `dev` section will be read from the projects YAML file (line 1 in the example below)
