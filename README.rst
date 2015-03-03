@@ -13,7 +13,6 @@ The objective of this repo is to enable MoJ teams to create project infrastructu
 
 Installation
 =============
-
 ::
     git clone git@github.com:ministryofjustice/bootstrap-cfn.git
     cd bootstrap-cfn
